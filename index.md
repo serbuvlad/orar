@@ -16,7 +16,7 @@ Orare mai ca lumea pentru 312AA.
   <br><br>
   <input type="checkbox" name="ppp" id="ppp">
   <label for="ppp">Psihologia Educației</label>
-  <br>
+  <br><br>
 </form>
 
 <button onclick="gibslink()">Dă și mie</button>

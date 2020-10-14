@@ -4,8 +4,7 @@ Orare mai ca lumea pentru 312AA.
 
 <h2>Download</h2>
 <form id="fform">
-  <h6>Opționale:</h6>
-  <br>
+  <h4>Opționale:</h4>
   <input type="radio" name="opp" id="eiais">
   <label for="eiais">Elemente de Informatică Aplicate în Ingineria Sistemelor</label>
   <br>
@@ -15,6 +14,18 @@ Orare mai ca lumea pentru 312AA.
   <input type="radio" name="opp" id="pi">
   <label for="eiais">Prelucrarea Informației</label>
   <br>
-  <input type="checkbox" id="ppp">
+  <input type="checkbox" name="ppp" id="ppp">
   <label for="ppp">Psihologia Educației</label>
+  <br>
+  <button onclick="gibslink()">Dă link</button>
 </form>
+
+<script>
+  function gibslink() {
+    let form = document.getElementById('signup');
+    let opt = form.elements['opp']
+    let psih = form.elements['ppp']
+    console.log(opt)
+    console.log(psih)
+  }
+</script>

@@ -19,14 +19,34 @@ Orare mai ca lumea pentru 312AA.
   <br>
 </form>
 
-<button onclick="gibslink()">Dă link</button>
+<button onclick="gibslink()">Dă și mie</button>
 
 <script>
   function gibslink() {
-    let form = document.getElementById('fform');
-    let opt = form.elements['opp']
-    let psih = form.elements['ppp']
-    console.log(opt)
-    console.log(psih)
+    let hasEiais = document.getElementById('eiais').checked
+    let hasGi = document.getElementById('gi').checked
+    let hasPi = document.getElementById('pi').checked
+    let hasPsiho = document.getElementById('ppp').checked
+    
+    console.log(hasEiais, hasGi, hasPi, hasPsiho)
+
+    if (!hasEiais && !hasGi && !hasPi) {
+        window.alert('EROARE FATALA!! NU AI SELECTAT UN OPTIONAL')
+        return
+    }
+    
+    var link = 'https://serbuvlad.github.io/orare/312AA/orar'
+    if (hasEiais)
+        link += '_eiais'
+    else if (hasGi)
+        link += '_gi'
+    else if (hasPi)
+        link += '_pi'
+
+    if (hasPsiho)
+        link += '_psiho'
+
+    link += '.xlsx'
+    window.open(link)
   }
 </script>

@@ -22,7 +22,7 @@ Orare mai ca lumea pentru 312AA.
 
 <script>
   function gibslink() {
-    let form = document.getElementById('signup');
+    let form = document.getElementById('fform');
     let opt = form.elements['opp']
     let psih = form.elements['ppp']
     console.log(opt)

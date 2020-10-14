@@ -13,7 +13,7 @@ Orare mai ca lumea pentru 312AA.
   <br>
   <input type="radio" name="opp" id="pi">
   <label for="eiais">Prelucrarea Informației</label>
-  <br>
+  <br><br>
   <input type="checkbox" name="ppp" id="ppp">
   <label for="ppp">Psihologia Educației</label>
   <br>
